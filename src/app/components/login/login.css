@@ -1,0 +1,102 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3EDF7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-top: 10vh;
+    border-radius: 20px;
+    width: 40%;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    width: 70%;
+}
+
+label {
+    font-weight: 700;
+    color: rgb(104, 104, 104);
+    margin: 1vh 0;
+    font-size: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(209, 209, 209);
+    transition: border 0.3s ease-in-out;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(104, 104, 104)
+}
+
+input:focus {
+    border: 2px solid rgb(104, 104, 104);
+    outline: none;
+}
+
+a {
+    color: rgb(104, 104, 104);
+}
+
+button {
+    width: 60%;
+    padding: 18px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: limegreen;
+}
+
+.error-message {
+    color: rgb(255, 40, 40);
+}
+
+#dniLength {
+    display: none;
+}
+
+#dniFormat {
+    display: none;
+}
+
+#dniNotFound {
+    display: none;
+}
+
+#wrongPassword {
+    display: none;
+}
+
+.data-test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3EDF7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-top: 2vh;
+    border-radius: 20px;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 20vh;
+    right: 16px;
+}
