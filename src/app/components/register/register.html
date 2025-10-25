@@ -1,0 +1,27 @@
+<main>
+  <div class="form-container">
+    <div class="form-header">
+      <h2>Registrarse</h2>
+    </div>
+    <form method="post">
+      <label for="fullname">Ingresa tu nombre completo</label>
+      <input type="text" name="fullname" id="fullname" />
+      <label for="dni">Ingresa tu DNI (sin puntos)</label>
+      <input type="text" maxlength="8" name="dni" id="dni" />
+      <p class="error-message" id="dniLength">El DNI debe contener al menos 8 caracteres.</p>
+      <p class="error-message" id="dniFormat">
+        Formato incorrecto. Porfavor, ingresa un DNI válido.
+      </p>
+      <p class="error-message" id="dniNotFound">
+        Usuario no encontrado. Si no te has registrado, hazlo ahora para ingresar.
+      </p>
+      <label for="password">Crea una contraseña</label>
+      <input type="password" name="password" id="password" />
+      <label for="confirmPassword">Confirmar contraseña</label>
+      <input type="password" name="confirmPassword" id="confirmPassword" />
+      <p class="error-message" id="wrongPassword">Contraseña incorrecta. Intentalo de nuevo.</p>
+    </form>
+    <p>¿Ya tenés cuenta? <a routerLink="/login">Iniciá sesión</a></p>
+    <button type="submit" (click)="getFormData($event)">Registrarme</button>
+  </div>
+</main>
